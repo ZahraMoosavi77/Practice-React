@@ -1,0 +1,13 @@
+.content__text{
+    
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #757474;
+    width: 98%;
+}
+
+.content{
+    padding: 0 16px 0px 16px;
+    width: 100%;
+    margin-bottom: 8px;
+}
