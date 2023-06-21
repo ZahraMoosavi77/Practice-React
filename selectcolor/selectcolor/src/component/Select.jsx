@@ -1,11 +1,16 @@
-import React from 'react'
 
-export default function Select() {
+import Box from './Box';
+
+export default function Select({onOptionChangeHandler}) {
     
+   
+
     const options =['red', 'orange', 'blue', 'black', 'pink'];
-    const onOptionChangeHandler = (event) => {
-		console.log("User Selected Value - ", event.target.value)
-    }
+
+
+       
+
+    
   return (
     <div>
         <center>
@@ -24,7 +29,11 @@ export default function Select() {
 
             </select>
 
+            
+
         </center>
+
+        
 
     </div>
   )
