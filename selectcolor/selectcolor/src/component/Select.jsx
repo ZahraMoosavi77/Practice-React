@@ -1,11 +1,11 @@
 
 import Box from './Box';
 
-export default function Select({onOptionChangeHandler}) {
+export default function Select({onOptionChangeHandler,options}) {
     
    
 
-    const options =['red', 'orange', 'blue', 'black', 'pink'];
+    
 
 
        
