@@ -20,7 +20,7 @@ export default function Select({onOptionChangeHandler}) {
 
                 <h3> color box</h3>
 
-                <option> Please choose one color </option>
+                <option value={''}> Please choose one color </option>
                 {options.map((option,index) =>{
                     return <option key={index}>
                         {option}
