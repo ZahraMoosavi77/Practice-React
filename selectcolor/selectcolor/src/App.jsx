@@ -5,6 +5,7 @@ import  { useState } from 'react'
 
 
 const App = () => {
+	const options =['red', 'orange', 'blue', 'black', 'pink'];
 	
 	const [color,setColor] = useState('');
 	
@@ -15,7 +16,7 @@ const App = () => {
 	}
 	return (
 		<>
-			<Select onOptionChangeHandler={onOptionChangeHandler}/>
+			<Select onOptionChangeHandler={onOptionChangeHandler} options={options}/>
       		
 			<Box color ={color}/>
 		</>
