@@ -1,0 +1,48 @@
+*{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+
+}
+.header{
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    
+}
+
+.header__logo{
+    width: 20%;
+}
+
+.header__logo p{
+    font-weight: bold;
+    color: white;
+    font-size: x-large;
+}
+.header__menu{
+    width: 20%;
+}
+.menu__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+
+}
+
+.menu__item a{
+    color: white;
+}
+
+.menu__item a:hover{
+    color: orange;
+}
+
