@@ -7,3 +7,4 @@ export * from '../pages/About/About';
 export * from './component/Card/Card';
 export * from './component/NotFound/NotFound';
 export * from './component/MainCard/MainCard';
+export * from './component/Cards/Cards'

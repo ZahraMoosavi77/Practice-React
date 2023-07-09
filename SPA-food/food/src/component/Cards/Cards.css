@@ -1,0 +1,21 @@
+.menu{
+    /* height: 300px; */
+    
+   
+}
+
+.menu__card{
+    width: 70%;
+    margin: 180px auto;
+    /* padding: 20px; */
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 40px;
+    flex-wrap: wrap;
+
+}
+
+.menu__card>* {
+        flex: 0 0 25%;
+}
