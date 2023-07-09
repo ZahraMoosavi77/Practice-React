@@ -1,5 +1,6 @@
 import React from 'react'
 import './Header.css'
+import {Link} from 'react-router-dom'
 
 export  function Header() {
   return (
@@ -7,10 +8,10 @@ export  function Header() {
         <div className="header__logo"><p>.Food</p></div>
         <div className="header__menu">
           <ul className='menu__item' >
-              <li><a>Home</a></li>
-              <li><a>Menu</a></li>
-              <li><a>About</a></li>
-              <li><a>Contact</a></li>
+              <Link to="/"><li><a>Home</a></li> </Link>
+              <Link to="/menu"><li><a>Menu</a></li></Link>
+              <Link to="/about"><li><a>About</a></li></Link>
+              <Link to="/contact"><li><a>Contact</a></li></Link>
           </ul>
         </div>
        

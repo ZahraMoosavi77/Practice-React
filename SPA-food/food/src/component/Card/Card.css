@@ -1,0 +1,33 @@
+.card{
+    width: 400px;
+    height: auto;
+    /* margin: 150px auto; */
+    border-radius: 12px;
+    border: 2px solid #e7e1e1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* background-color: antiquewhite; */
+   
+
+
+}
+
+.card__img img{
+
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 100%;
+    /* border-radius: 12px; */
+    
+
+}
+
+.card__title h3{
+    color: rgb(106, 2, 63);
+}
+
+.card__description p{
+    color: black;
+    padding: 16px;
+}
