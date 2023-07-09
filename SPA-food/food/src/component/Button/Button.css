@@ -1,0 +1,9 @@
+.button{
+    cursor: pointer;
+    background:"black" ;
+    color:"white" ;
+    width:"150px" ;
+    height: "100px";
+    font-size: medium;
+    
+}

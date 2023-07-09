@@ -2,6 +2,7 @@ import React from 'react'
 import './Form.css'
 import '../Input/Input'
 import Input from '../Input/Input'
+import Button from '../Button/Button'
 
 export default function Form() {
     const onClickAddHandler=(e)=>{
@@ -14,7 +15,8 @@ export default function Form() {
             <Input type="text" placeholder='Name'   />
             <Input type="phone" placeholder='  Phone' />
             <Input type="text" placeholder='  Message'   />
-            <button  type='submit' style={{pointerEvents:"cursor", background:"black" , color:"white" ,width:"150px" , fontsize:'larger'}}>Send Message</button>
+            <Button text={'Send Message'}/>
+            
    </form>
     
      

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import {Header, Footer, Home,About,Contact,Menu,MainCard} from "./export"
+import {Header, Footer, Home,About,Contact,Menu,MainCard,NotFound} from "./export"
 import {Routes,Route} from 'react-router-dom'
 
 import './App.css'
@@ -17,7 +17,7 @@ function App() {
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/menu' element={<Menu/>}/>
           <Route path='/menu/:id'element={<MainCard/>}/>
-          {/* <Route path='*' element={<NotFound/>} /> */}
+          <Route path='*' element={<NotFound/>} />
 
       </Routes>      
       <Footer/>
