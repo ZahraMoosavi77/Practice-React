@@ -14,11 +14,19 @@ export  function Create() {
     const navigate = useNavigate();
     const handleSubmit = function(event) {
         event.preventDefault();
-        axios.post(" http://localhost:3000/users", inputData)
-        .then(res =>{
-            alert("data post succussfully")
-            navigate('/')
-        })
+        if(inputData.name.trim() && inputData.email.trim() && inputData.number.trim()){
+
+            
+            axios.post(" http://localhost:3000/users", inputData)
+            .then(res =>{
+                alert("data post succussfully")
+                navigate('/')
+            })
+
+
+            
+        }
+       
 
     }
     const onChangeHandlerName = function(e){
