@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios'
+import {Form} from '../export'
+import './create.css'
 
 export  function Create() {
     const[inputData,setInputData] = useState({
          name:'',
-         email:''
+         email:'',
+         number:''
     })
 
     const navigate = useNavigate();
@@ -17,29 +20,53 @@ export  function Create() {
             navigate('/')
         })
 
-        
     }
+    const onChangeHandlerName = function(e){
+        setInputData({...inputData, name:e.target.value})
+
+    }
+
+    const onChangeHandlerEmail = (e)=>{
+        setInputData({...inputData, email:e.target.value})
+
+    }
+
+    const onChangeHandlerNumber = (e)=>{
+        setInputData({...inputData, number:e.target.value})
+
+    }
+
+        
+    
   return (
-    <div>
+    <div className='create'>
 
-        <div>
-            <div>
-                <form  onSubmit={handleSubmit}>
+        <div className="create__title">
 
-                    <div>
-                        <label htmlFor="name">Name:</label>
-                        <input type="text"  name='name' onChange={e=>setInputData({...inputData, name:e.target.value})}/>
+            <h2>CRUD OPERATIONS</h2>
 
-                    </div>
-                    <div>
-                        <label htmlFor="email">Email:</label>
-                        <input type="email" name='email' onChange={e=>setInputData({...inputData,email:e.target.value})} />
-
-                    </div>
-                    <button>submit</button>
-                </form>
-            </div>
+          
         </div>
+
+        <div className='create__text'>
+            <h3> Create</h3>
+            <p>Enter Student's Information to create an  account</p>
+        </div>
+        <Form onSubmit={handleSubmit} onchangeemail={onChangeHandlerEmail} 
+        onchangename={onChangeHandlerName} onchangenumber={onChangeHandlerNumber}  type={{email:'email', text:'text',number:'number'}}  
+        value={undefined} 
+        name ={{email:'email', Name:'name',number:'number'}} text={'SUBMIT'}
+        color={'white'} backgroundcolor={' rgb(253,174,1)'}
+        /> 
+
+        {/* how write well, yek functin bara hamashon , behtar dadn props? */}
+
+       
+               
+
+                   
+        
+        
     </div>
   )
 }

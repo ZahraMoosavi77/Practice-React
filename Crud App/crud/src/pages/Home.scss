@@ -71,10 +71,10 @@ html{
     // border-spacing: 5em;
         width: 100%;
         border-collapse: collapse;
-     justify-content: space-around;
-     margin-top: 2rem;
+        margin-top: 2rem;
+        font-size: 2rem;
 
-     font-size: 2rem;
+       
      th{
 
 
@@ -97,6 +97,13 @@ html{
        
     }
     
+
+    &__head{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     
 
    
@@ -104,6 +111,9 @@ html{
     
      
 }
+
+
+
 
 .profile{
 

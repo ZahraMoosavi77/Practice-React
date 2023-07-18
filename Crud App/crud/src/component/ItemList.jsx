@@ -26,13 +26,13 @@ export function ItemList({data}) {
     }
 
   return (
-    <div>
-        <tr>
+    <div className='list'>
+        <tr className='list__item'>
 
             <td><div className='profile'><img src="assets/imsge/1.jpg" alt="image" /></div></td>
             <td>{data.name}</td>
             <td>{data.email}</td>
-            <td>{'00912'}</td>
+            <td>{data.number}</td>
             <td>
                 <Link to={`/update/${data.id}`}>Update</Link>
                 <button onClick={e=> handleDelete(data.id)}>Delete</button>

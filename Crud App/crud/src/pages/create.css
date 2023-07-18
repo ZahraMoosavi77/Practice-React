@@ -1,0 +1,45 @@
+.create{
+   
+   
+    background-color: white;
+    padding: 1.8rem;
+    width: 30rem;
+    height: 55rem;
+    /* margin: 0 auto; */
+
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.create__title h2{
+    width: 100%;
+    /* padding: .2rem; */
+   
+    font-size: 2.5rem;
+    color: black;
+    letter-spacing: .05rem;
+}
+
+.create__title{
+    border-left: .6rem solid rgb(248,212,66);
+    padding-left: .6rem;
+
+
+}
+
+.create__text{
+
+    color: black;
+    font-size: 2rem;
+}
+
+.create__text p{
+    font-size: 1.4rem;
+    width: 100%;
+    color: rgb(126,126,126);
+}

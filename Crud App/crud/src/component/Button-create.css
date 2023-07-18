@@ -1,0 +1,10 @@
+.Button{
+
+    width: 80%;
+    /* background-color: rgb(253,174,1); */
+   
+    font-size: 1.6rem;
+
+    border-radius: .4rem;
+}
+

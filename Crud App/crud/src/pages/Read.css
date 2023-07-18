@@ -1,1 +1,30 @@
-/*# sourceMappingURL=Read.css.map */
+.card{
+   
+   
+    background-color: white;
+    padding: 1.8rem;
+    width: 50rem;
+    height: 55rem;
+
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+
+.card h5{
+
+    font-size: 3.6rem;
+    color: black;
+}
+
+.card p{
+
+color: black;
+font-size: 2rem;
+}
+

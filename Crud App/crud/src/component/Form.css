@@ -1,7 +1,9 @@
-.list__item{
+form{
 
-    font-size: 1.5rem;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }

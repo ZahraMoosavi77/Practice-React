@@ -1,0 +1,23 @@
+.input{
+
+    width: 80%;
+   text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    
+}
+
+input{
+
+    width: 100%;
+    padding: 1.2rem;
+    border-radius: .4rem;
+    /* border-color: rgb(235,235,235); */
+    border: .2rem  solid  rgb(235,235,235);
+}
+
+label{
+    font-size: 1.4rem;
+}

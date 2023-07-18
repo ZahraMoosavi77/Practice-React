@@ -60,7 +60,7 @@ export  function Home() {
 
                     <thead>
 
-                        <tr>
+                        <tr className='table__head'>
                             <th></th>
                             <th>Name</th>
                             <th>Email</th>
@@ -72,7 +72,7 @@ export  function Home() {
 
 
 
-                    <tbody>
+                    <tbody  style={{margin:'50px'}}>
 
 
 
